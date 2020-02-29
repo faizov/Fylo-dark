@@ -1,0 +1,68 @@
+body {
+  background: #181f2a;
+  font-size: 14px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway';
+}
+
+.container-fluid {
+  padding: 4rem;
+}
+
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar ul li {
+  margin: 0 25px 0 25px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.location {
+  text-align: center;
+  color: white;
+}
+
+.location h1 {
+  font-size: 2.5em;
+  padding: 1rem 0 1rem 0;
+  font-weight: 700;
+}
+
+.location p {
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.location button {
+  background: #339ecc;
+  color: white;
+  padding: 15px 100px 15px 100px;
+  border: 0;
+  border-radius: 30px;
+}
+/*# sourceMappingURL=main.css.map */
