@@ -18,6 +18,9 @@ body
 h1, h2, h3, h4
     font-family: 'Raleway'
 
+p
+    color: #cecece
+
 .container-fluid
     padding: 4rem
 
@@ -25,6 +28,12 @@ h1, h2, h3, h4
     max-width: 600px
     margin-left: auto
     margin-right: auto
+
+.row
+    display: flex
+
+.intro
+    background: url(/images/bg-curvy-desktop.svg) no-repeat center bottom    
 
 .navbar
     display: flex
@@ -60,5 +69,51 @@ h1, h2, h3, h4
         padding: 15px 100px 15px 100px
         border: 0
         border-radius: 30px
+        cursor: pointer
 
-    
+.functions
+    color: $white
+    margin-top: 200px
+
+    .container
+        max-width: 1300px
+        margin-left: auto
+        margin-right: auto
+
+    .item-function
+        padding: 2em 9em 2em 9em
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+    img 
+        padding-bottom: 2em   
+
+    p
+        margin: 0
+
+.productive
+    color: $white
+    margin-top: 200px
+
+    .row
+        align-items: center
+
+    .container
+        max-width: 1200px
+        margin-left: auto
+        margin-right: auto
+
+    .text 
+        padding: 0 0 0 5em
+
+    h1
+        width: 80%
+        font-size: 2.5em
+
+    a
+        color: $cyan
+        text-decoration: none
+        border-bottom: 1px solid $cyan
+        padding-bottom: 5px
