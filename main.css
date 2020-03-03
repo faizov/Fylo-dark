@@ -3,6 +3,8 @@ body {
   font-size: 14px;
   font-family: 'Open Sans';
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -14,7 +16,9 @@ p {
 }
 
 .container-fluid {
-  padding: 4rem;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -30,13 +34,16 @@ p {
 }
 
 .intro {
-  background: url(/images/bg-curvy-desktop.svg) no-repeat center bottom;
+  background: #1c2431 url(/images/bg-curvy-desktop.svg) no-repeat center bottom;
+  height: 100vh;
+  background-size: contain;
 }
 
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 4em 0 4em 0;
 }
 
 .navbar ul {
@@ -73,12 +80,17 @@ p {
 }
 
 .location button {
-  background: #339ecc;
+  background: -webkit-gradient(linear, right top, left bottom, from(#339ecc), to(#65e2d9));
+  background: linear-gradient(to bottom left, #339ecc, #65e2d9);
   color: white;
   padding: 15px 100px 15px 100px;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
+}
+
+.location button:focus {
+  outline: 0;
 }
 
 .functions {
@@ -146,5 +158,132 @@ p {
   text-decoration: none;
   border-bottom: 1px solid #65e2d9;
   padding-bottom: 5px;
+}
+
+.productive a img {
+  vertical-align: middle;
+}
+
+.feedback {
+  color: white;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.feedback .container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.feedback .row img.quotes {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.feedback .row .item-feedback {
+  padding: 30px;
+  margin: 30px;
+  background: #202a3c;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.feedback .row .item-feedback .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+
+.feedback .row .item-feedback .author p {
+  color: % white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.feedback .row .item-feedback .author small {
+  color: #cecece;
+}
+
+.feedback .row .item-feedback .author img {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.get-early {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.get-early .container {
+  max-width: 800px;
+  position: absolute;
+  top: -30%;
+}
+
+.get-early .get-early-input {
+  padding: 50px;
+  background: #1c2431;
+  text-align: center;
+}
+
+.get-early .get-early-input h1 {
+  color: white;
+}
+
+.get-early .get-early-input p {
+  margin: 40px 0 40px 0;
+}
+
+.get-early .get-early-input input {
+  padding: 15px 30px 15px 30px;
+  border: 0;
+  border-radius: 50px;
+  width: 50%;
+}
+
+.get-early .get-early-input input:focus {
+  outline: 0;
+}
+
+.get-early .get-early-input button {
+  margin-left: 30px;
+  padding: 15px 30px 15px 30px;
+  border: 0;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, right top, left bottom, from(#339ecc), to(#65e2d9));
+  background: linear-gradient(to bottom left, #339ecc, #65e2d9);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.get-early .get-early-input button:focus {
+  outline: 0;
+}
+
+.footer {
+  position: relative;
+  height: 600px;
+  background: #0b1523;
+  margin-top: 400px;
+}
+
+.footer .navbar {
+  padding-top: 15em;
 }
 /*# sourceMappingURL=main.css.map */

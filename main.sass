@@ -14,6 +14,8 @@ body
     font-size: 14px
     font-family: 'Open Sans'
     font-weight: 400
+    margin: 0
+    padding: 0
 
 h1, h2, h3, h4
     font-family: 'Raleway'
@@ -22,7 +24,9 @@ p
     color: #cecece
 
 .container-fluid
-    padding: 4rem
+    width: 1500px
+    margin-left: auto
+    margin-right: auto
 
 .container
     max-width: 600px
@@ -33,10 +37,13 @@ p
     display: flex
 
 .intro
-    background: url(/images/bg-curvy-desktop.svg) no-repeat center bottom    
+    background: $intro url(/images/bg-curvy-desktop.svg) no-repeat center bottom    
+    height: 100vh
+    background-size: contain
 
 .navbar
     display: flex
+    padding: 4em 0 4em 0
 
     ul
         list-style: none
@@ -64,12 +71,15 @@ p
         padding: 1rem 0 1rem 0
 
     button
-        background: $blue
+        background: linear-gradient(to bottom left, $blue, $cyan)
         color: $white
         padding: 15px 100px 15px 100px
         border: 0
         border-radius: 30px
         cursor: pointer
+
+        &:focus
+            outline: 0
 
 .functions
     color: $white
@@ -117,3 +127,104 @@ p
         text-decoration: none
         border-bottom: 1px solid $cyan
         padding-bottom: 5px
+
+        img
+            vertical-align: middle
+
+.feedback
+    color: $white
+    margin-top: 200px
+    margin-bottom: 200px
+    
+    .container
+        max-width: 1300px
+        margin-left: auto
+        margin-right: auto
+
+    .row
+        align-items: center
+        position: relative
+
+        img.quotes
+            position: absolute
+            top: 0
+            left: 20px
+
+        .item-feedback
+            padding: 30px
+            margin: 30px
+            background: $testimonials
+            border-radius: 3px
+            z-index: 1
+
+            .author
+                display: flex
+                align-items: center
+                font-size: 10px
+
+                p
+                    color: %$white
+                    font-weight: 700
+                    margin: 0
+
+                small
+                    color: #cecece
+
+                img
+                    height: 30px
+                    border-radius: 50%
+                    margin-right: 10px
+
+.get-early
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+
+    .container
+        max-width: 800px
+        position: absolute
+        top: -30%
+
+    .get-early-input
+        padding: 50px
+        background: $intro
+        text-align: center
+
+        h1
+            color: $white
+        
+        p
+            margin: 40px 0 40px 0
+
+        input
+            padding: 15px 30px 15px 30px
+            border: 0
+            border-radius: 50px
+            width: 50%
+
+            &:focus
+                outline: 0
+
+        button
+            margin-left: 30px
+            padding: 15px 30px 15px 30px
+            border: 0
+            border-radius: 50px
+            background: linear-gradient(to bottom left, $blue, $cyan)
+            color: $white
+            font-weight: 700
+            cursor: pointer
+
+            &:focus
+                outline: 0
+
+.footer
+    position: relative
+    height: 600px
+    background: $footer
+    margin-top: 400px
+
+    .navbar
+        padding-top: 15em
+
+
